@@ -1,50 +1,72 @@
-# IN3050 / IN4050 — Group Sessions
+# IN3050 / IN4050 - Group Sessions
 
 Student-facing material for the University of Oslo course **Introduction to Artificial Intelligence and Machine Learning**.
 
-The repository is organized around one principle: each group session should turn abstract lecture concepts into something you can **see, change, and explain**.
+Each group session turns an abstract idea into something students can **see, change, break, and explain**.
 
 ## Start here
 
-1. Open the notebook for the current week.
-2. Read the short learning goals.
+1. Install the environment.
+2. Open the notebook for the current week.
 3. Predict what will happen before running each experiment.
-4. Change the parameters and explain the result to someone else.
-5. Finish the exit ticket without looking at the solution.
+4. Change one parameter and explain the result.
+5. Finish the exit ticket without looking up the answer.
+
+The first notebook is [vectors, matrices and decision boundaries](weeks/week-01/01-vectors-matrices-decision-boundaries.ipynb). For a shorter experiment, try the [decision-boundary playground](mini_labs/decision-boundary-playground.ipynb).
 
 ## Repository map
 
 | Path | Purpose |
 |---|---|
-| `weeks/` | Weekly interactive notebooks and exercise material |
-| `exercises/` | Short reusable problems and exam-style questions |
-| `resources/` | Formula sheets, terminology and recommended links |
-| `solutions/` | TA-only solution area; not published to students by default |
+| `weeks/` | Full weekly group-session notebooks |
+| `mini_labs/` | Reusable 10-25 minute visual experiments |
+| `datasets/` | Small documented teaching datasets |
+| `shared/` | Plotting and notebook utilities |
+| `exercises/` | Short problems and exam-style transfer questions |
+| `resources/` | Terminology, formula sheets and recommended links |
 | `assets/` | Images and figures used by notebooks |
+
+Full assignment and exam solutions are deliberately not stored in this public repository.
+
+## Learning arc
+
+The notebooks are designed as one connected story:
+
+```text
+vectors and matrices
+        -> search spaces and fitness
+        -> exploration vs exploitation
+        -> linear decision boundaries
+        -> probability and loss
+        -> overfitting and evaluation
+        -> nonlinear models and neural networks
+```
 
 ## Weekly roadmap
 
 | Week | Theme | Status |
 |---|---|---|
-| 01 | Vectors, matrices and linear decision boundaries | Starter notebook ready |
-| 02 | Search and problem formulation | Planned |
-| 03 | Heuristic search | Planned |
-| 04 | Games and adversarial search | Planned |
-| 05 | Constraint satisfaction | Planned |
-| 06 | Probability and uncertainty | Planned |
-| 07 | Bayesian reasoning | Planned |
-| 08 | Machine-learning foundations | Planned |
-| 09 | Linear models and evaluation | Planned |
-| 10 | Neural networks | Planned |
+| 01 | Vectors, matrices and linear decision boundaries | Starter ready |
+| 02 | Search, optimization and problem formulation | Planned |
+| 03 | Hill climbing, simulated annealing and genetic algorithms | Planned |
+| 04 | Supervised-learning foundations | Planned |
+| 05 | Linear regression and gradient descent | Planned |
+| 06 | Logistic regression and classification | Planned |
+| 07 | Train, validation, test and feature scaling | Planned |
+| 08 | Multiclass classification | Planned |
+| 09 | Neural networks and nonlinear boundaries | Planned |
+| 10 | Backpropagation and training | Planned |
 | 11 | Unsupervised learning | Planned |
 | 12 | Reinforcement learning | Planned |
 | 13 | Exam synthesis and review | Planned |
 
-The roadmap is intentionally easy to adjust once the official Autumn 2026 lecture plan is final.
+The roadmap can be adjusted when the official Autumn 2026 teaching sequence is final.
 
 ## Run locally
 
 Python 3.11 is recommended.
+
+### `venv`
 
 ```bash
 python -m venv .venv
@@ -53,23 +75,32 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-Then open `weeks/week-01/01-vectors-matrices-decision-boundaries.ipynb`.
+### Conda
 
-## For students
+```bash
+conda env create -f environment.yml
+conda activate in3050-in4050-f2026
+jupyter lab
+```
 
-- You are expected to make mistakes in the notebooks.
-- A correct prediction is useful; a wrong prediction followed by a good explanation is often more useful.
-- IN4050 students should also complete the marked **IN4050 extension** prompts.
-- Do not memorize plots. Learn what causes their shape to change.
+## Teaching principle
 
-## For teaching assistants
+Every notebook should follow the same rhythm:
 
-See [TEACHING.md](TEACHING.md) for the repeatable session structure and preparation checklist. Keep full solutions outside the public branch until after the relevant deadline.
+1. Present one concrete question.
+2. Ask students to predict the outcome.
+3. Build the simplest useful model.
+4. Change one parameter.
+5. Deliberately expose a failure case.
+6. Name the concept that explains the result.
+7. Transfer it to an exam-style question.
+
+See [TEACHING.md](TEACHING.md) for the 105-minute session template and preparation checklist.
 
 ## Course and copyright note
 
-This is supplementary group-teaching material, not an official course repository. Official announcements, curriculum and deadlines on UiO course pages take precedence. Do not commit copyrighted lecture slides, solution manuals, student submissions, personal data, API keys or credentials.
+This is supplementary group-teaching material, not an official course repository. Official UiO announcements, curriculum and deadlines take precedence. Do not commit copyrighted lecture slides, solution manuals, student submissions, personal data, API keys or credentials.
 
 ## License
 
-Original code and prose in this repository are released under the MIT License. Third-party course material retains its original ownership and must not be copied here without permission.
+Original code and prose are released under the MIT License. Third-party material retains its original ownership.
