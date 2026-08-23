@@ -14,8 +14,6 @@ Course material from a previous semester of IN3050/IN4050 is available here:
 
 - [IN3050/IN4050 course material from the previous semester](https://github.uio.no/ziyuzh/IN3050_IN4050-public/tree/main)
 
-The material may differ from the current semester's curriculum, assignments, and schedule, but it can still be useful for extra explanations and practice.
-
 ## Problems with Anaconda?
 
 1. Use an IFI machine where the Python setup should already be prepared. It is available here:  
