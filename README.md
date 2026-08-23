@@ -6,13 +6,15 @@ Group session is every Tuesday 14:15-16:00 on Modula.
 
 Here I will post resources from the group sessions.
 
-If you are wondering about something, or have objections or wishes for the group teaching, do not hesitate to get in touch by e-mail ([finnegj@uio.no](mailto:finnegj@uio.no)) or mattermost.
+If you are wondering about something, or have objections or wishes for the group teaching, do not hesitate to get in touch by e-mail ([finnegj@uio.no](mailto:finnegj@uio.no)) or Mattermost.
 
-## Additional resources
+## Course material from the previous semester
 
-Material from previous IN3050/IN4050 group sessions is available here:
+Course material from a previous semester of IN3050/IN4050 is available here:
 
-- [Previous group-session resources](https://github.uio.no/ziyuzh/IN3050_IN4050-public/tree/main)
+- [IN3050/IN4050 course material from the previous semester](https://github.uio.no/ziyuzh/IN3050_IN4050-public/tree/main)
+
+The material may differ from the current semester's curriculum, assignments, and schedule, but it can still be useful for extra explanations and practice.
 
 ## Problems with Anaconda?
 
@@ -23,6 +25,3 @@ or
 
 2. Try to avoid Anaconda and use another tool to manage your Python installation, such as `venv`:  
    <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/>
-
-
-
