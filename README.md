@@ -2,11 +2,11 @@
 
 Welcome to group 1 in IN3050/4050!
 
-Group session is every Wednesday 12:15-14:00 on Limbo.
+Group session is every Tuesday 14:15-16:00 on Modula.
 
 Here I will post resources from the group sessions.
 
-If you are wondering about something, or have objections or wishes for the group teaching, do not hesitate to get in touch by e-mail ([finnegj@uio.no](mailto:finnegj@uio.no)) or Astro-discourse.
+If you are wondering about something, or have objections or wishes for the group teaching, do not hesitate to get in touch by e-mail ([finnegj@uio.no](mailto:finnegj@uio.no)) or mattermost.
 
 ## Problems with Anaconda?
 
