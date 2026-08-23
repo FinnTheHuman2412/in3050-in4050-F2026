@@ -1,39 +1,19 @@
-# IN3050 / IN4050 - Group 1
+# IN3050-4050-Group1
 
-Supplementary material for the IN3050/IN4050 group sessions at the University of Oslo.
+Welcome to group 1 in IN3050/4050!
 
-The repository is intentionally simple: open the folder for the current week and use the notebook, questions and supporting notes found there.
+Group session is every Wednesday 12:15-14:00 on Limbo.
 
-## Weekly material
+Here I will post resources from the group sessions.
 
-| Week | Main topic | Interactive material |
-|---|---|---|
-| 01 | Vectors, matrices and decision boundaries | Jupyter notebook |
-| 02 | Search and optimization | Jupyter notebook |
-| 03 | k-nearest neighbours and supervised learning | Jupyter notebook |
-| 04 | Evolutionary algorithms | Questions and solutions |
-| 05 | Supervised learning | Questions and solutions |
-| 06 | Perceptron and linear regression | Questions and solutions |
-| 07 | Logistic regression and classification | Questions and solutions |
-| 08 | Feed-forward networks and backpropagation | Notes |
-| 09 | Bias and variance | Notes |
-| 10 | Reinforcement learning | Notes |
-| 11 | Unsupervised learning | Notes |
-| 12 | Deep learning | Notes |
+If you are wondering about something, or have objections or wishes for the group teaching, do not hesitate to get in touch by e-mail ([finnegj@uio.no](mailto:finnegj@uio.no)) or Astro-discourse.
 
-## Run the notebooks
+## Problems with Anaconda?
 
-```bash
-git clone https://github.com/FinnTheHuman2412/in3050-in4050-F2026.git
-cd in3050-in4050-F2026
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-jupyter lab
-```
+1. Use an IFI machine where the Python setup should already be prepared. It is available here:  
+   <https://www.uio.no/tjenester/it/maskin/programvare/programkiosk/hjelp/vmware.html>
 
-The notebooks can also be viewed on GitHub or opened through Google Colab.
+or
 
-## Repository policy
-
-This is supplementary group material, not an official course repository. Official UiO announcements and deadlines take precedence. Some folders contain solution material; use it according to the course rules and relevant deadlines.
+2. Try to avoid Anaconda and use another tool to manage your Python installation, such as `venv`:  
+   <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/>
