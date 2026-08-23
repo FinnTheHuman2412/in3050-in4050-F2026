@@ -1,97 +1,39 @@
-# IN3050 / IN4050 - Interactive group sessions
+# IN3050 / IN4050 - Group 1
 
-Student-facing material for the University of Oslo course **Introduction to Artificial Intelligence and Machine Learning**.
+Supplementary material for the IN3050/IN4050 group sessions at the University of Oslo.
 
-This repository turns course terminology into things students can **predict, see, change, break and explain**. It combines short Mentimeter diagnostics with executable Jupyter notebooks and exam-style transfer questions.
+The repository is intentionally simple: open the folder for the current week and use the notebook, questions and supporting notes found there.
 
-## Start here
+## Weekly material
 
-| Item | Link |
-|---|---|
-| Course progression | [COURSE_MAP.md](COURSE_MAP.md) |
-| Week 1 session | [weeks/week-01](weeks/week-01) |
-| Week 1 notebook | [From numbers to a decision boundary](weeks/week-01/01-vectors-matrices-decision-boundaries.ipynb) |
-| Week 1 Menti | [Menti build sheet](menti/week-01.md) |
-| Teaching guide | [TEACHING.md](TEACHING.md) |
-
-## Repository map
-
-| Path | Purpose |
-|---|---|
-| `weeks/` | Complete weekly group-session packages |
-| `menti/` | Exact questions, poll types, answers and timing |
-| `mini_labs/` | Reusable 10-25 minute experiments |
-| `datasets/` | Small documented teaching datasets |
-| `shared/` | Plotting and notebook utilities |
-| `exercises/` | Short unanswered problems and exam-style questions |
-| `templates/` | Reusable structure for future sessions |
-| `resources/` | Terminology and recommended links |
-| `assets/` | Original figures used by notebooks |
-
-## Current material
-
-| Week | Theme | Material |
+| Week | Main topic | Interactive material |
 |---|---|---|
-| 01 | Vectors, matrices and decision boundaries | Complete notebook, Menti and 90-minute plan |
-| 02 | Search and optimization | Visual notebook foundation |
-| 03 | kNN and supervised learning | Visual notebook foundation |
-| 04 | Perceptron and linear regression | Planned |
-| 05 | Evolutionary algorithms I | Planned |
-| 06 | Evolutionary algorithms II | Planned |
-| 07 | Logistic regression | Planned |
-| 08 | Feed-forward networks and backpropagation | Planned |
-| 09 | Unsupervised learning | Planned |
-| 10 | CNN and general revision | Planned |
+| 01 | Vectors, matrices and decision boundaries | Jupyter notebook |
+| 02 | Search and optimization | Jupyter notebook |
+| 03 | k-nearest neighbours and supervised learning | Jupyter notebook |
+| 04 | Evolutionary algorithms | Questions and solutions |
+| 05 | Supervised learning | Questions and solutions |
+| 06 | Perceptron and linear regression | Questions and solutions |
+| 07 | Logistic regression and classification | Questions and solutions |
+| 08 | Feed-forward networks and backpropagation | Notes |
+| 09 | Bias and variance | Notes |
+| 10 | Reinforcement learning | Notes |
+| 11 | Unsupervised learning | Notes |
+| 12 | Deep learning | Notes |
 
-## Run in a browser
-
-### GitHub Codespaces
-
-Select **Code -> Codespaces -> Create codespace on main**. The included dev-container configuration installs the environment and Jupyter extension.
-
-### Google Colab
-
-Open a notebook through Colab by replacing its GitHub prefix with:
-
-```text
-https://colab.research.google.com/github/FinnTheHuman2412/in3050-in4050-F2026/blob/main/
-```
-
-For example, open the [Week 1 notebook in Colab](https://colab.research.google.com/github/FinnTheHuman2412/in3050-in4050-F2026/blob/main/weeks/week-01/01-vectors-matrices-decision-boundaries.ipynb).
-
-## Run locally
+## Run the notebooks
 
 ```bash
 git clone https://github.com/FinnTheHuman2412/in3050-in4050-F2026.git
 cd in3050-in4050-F2026
 python -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\Activate.ps1
+source .venv/bin/activate        # Windows: .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 jupyter lab
 ```
 
-Conda users can instead run:
+The notebooks can also be viewed on GitHub or opened through Google Colab.
 
-```bash
-conda env create -f environment.yml
-conda activate in3050-in4050-f2026
-jupyter lab
-```
+## Repository policy
 
-## Teaching rhythm
-
-```text
-predict -> vote -> discuss -> experiment -> break the model -> explain -> transfer
-```
-
-Each main notebook ends with:
-
-- one deliberate failure case;
-- one optional IN4050 extension;
-- an exit ticket containing define, apply and diagnose questions.
-
-## Public-repository policy
-
-This is supplementary group-teaching material, not an official course repository. Official UiO pages take precedence. Do not publish mandatory-assignment solutions, exam solutions, student submissions, private TA notes, copyrighted lecture decks, personal data or credentials here.
-
-Original code and prose are released under the MIT License. Third-party material retains its original ownership.
+This is supplementary group material, not an official course repository. Official UiO announcements and deadlines take precedence. Some folders contain solution material; use it according to the course rules and relevant deadlines.
