@@ -1,81 +1,76 @@
-# IN3050 / IN4050 - Group Sessions
+# IN3050 / IN4050 - Interactive group sessions
 
 Student-facing material for the University of Oslo course **Introduction to Artificial Intelligence and Machine Learning**.
 
-Each group session turns an abstract idea into something students can **see, change, break, and explain**.
+This repository turns course terminology into things students can **predict, see, change, break and explain**. It combines short Mentimeter diagnostics with executable Jupyter notebooks and exam-style transfer questions.
 
 ## Start here
 
-1. Install the environment.
-2. Open the notebook for the current week.
-3. Predict what will happen before running each experiment.
-4. Change one parameter and explain the result.
-5. Finish the exit ticket without looking up the answer.
-
-The first notebook is [vectors, matrices and decision boundaries](weeks/week-01/01-vectors-matrices-decision-boundaries.ipynb). For a shorter experiment, try the [decision-boundary playground](mini_labs/decision-boundary-playground.ipynb).
+| Item | Link |
+|---|---|
+| Course progression | [COURSE_MAP.md](COURSE_MAP.md) |
+| Week 1 session | [weeks/week-01](weeks/week-01) |
+| Week 1 notebook | [From numbers to a decision boundary](weeks/week-01/01-vectors-matrices-decision-boundaries.ipynb) |
+| Week 1 Menti | [Menti build sheet](menti/week-01.md) |
+| Teaching guide | [TEACHING.md](TEACHING.md) |
 
 ## Repository map
 
 | Path | Purpose |
 |---|---|
-| `weeks/` | Full weekly group-session notebooks |
-| `mini_labs/` | Reusable 10-25 minute visual experiments |
+| `weeks/` | Complete weekly group-session packages |
+| `menti/` | Exact questions, poll types, answers and timing |
+| `mini_labs/` | Reusable 10-25 minute experiments |
 | `datasets/` | Small documented teaching datasets |
 | `shared/` | Plotting and notebook utilities |
-| `exercises/` | Short problems and exam-style transfer questions |
-| `resources/` | Terminology, formula sheets and recommended links |
-| `assets/` | Images and figures used by notebooks |
+| `exercises/` | Short unanswered problems and exam-style questions |
+| `templates/` | Reusable structure for future sessions |
+| `resources/` | Terminology and recommended links |
+| `assets/` | Original figures used by notebooks |
 
-Full assignment and exam solutions are deliberately not stored in this public repository.
+## Current material
 
-## Learning arc
+| Week | Theme | Material |
+|---|---|---|
+| 01 | Vectors, matrices and decision boundaries | Complete notebook, Menti and 90-minute plan |
+| 02 | Search and optimization | Visual notebook foundation |
+| 03 | kNN and supervised learning | Visual notebook foundation |
+| 04 | Perceptron and linear regression | Planned |
+| 05 | Evolutionary algorithms I | Planned |
+| 06 | Evolutionary algorithms II | Planned |
+| 07 | Logistic regression | Planned |
+| 08 | Feed-forward networks and backpropagation | Planned |
+| 09 | Unsupervised learning | Planned |
+| 10 | CNN and general revision | Planned |
 
-The notebooks are designed as one connected story:
+## Run in a browser
+
+### GitHub Codespaces
+
+Select **Code -> Codespaces -> Create codespace on main**. The included dev-container configuration installs the environment and Jupyter extension.
+
+### Google Colab
+
+Open a notebook through Colab by replacing its GitHub prefix with:
 
 ```text
-vectors and matrices
-        -> search spaces and fitness
-        -> exploration vs exploitation
-        -> linear decision boundaries
-        -> probability and loss
-        -> overfitting and evaluation
-        -> nonlinear models and neural networks
+https://colab.research.google.com/github/FinnTheHuman2412/in3050-in4050-F2026/blob/main/
 ```
 
-## Weekly roadmap
-
-| Week | Theme | Status |
-|---|---|---|
-| 01 | Vectors, matrices and linear decision boundaries | Starter ready |
-| 02 | Search, optimization and problem formulation | Planned |
-| 03 | Hill climbing, simulated annealing and genetic algorithms | Planned |
-| 04 | Supervised-learning foundations | Planned |
-| 05 | Linear regression and gradient descent | Planned |
-| 06 | Logistic regression and classification | Planned |
-| 07 | Train, validation, test and feature scaling | Planned |
-| 08 | Multiclass classification | Planned |
-| 09 | Neural networks and nonlinear boundaries | Planned |
-| 10 | Backpropagation and training | Planned |
-| 11 | Unsupervised learning | Planned |
-| 12 | Reinforcement learning | Planned |
-| 13 | Exam synthesis and review | Planned |
-
-The roadmap can be adjusted when the official Autumn 2026 teaching sequence is final.
+For example, open the [Week 1 notebook in Colab](https://colab.research.google.com/github/FinnTheHuman2412/in3050-in4050-F2026/blob/main/weeks/week-01/01-vectors-matrices-decision-boundaries.ipynb).
 
 ## Run locally
 
-Python 3.11 is recommended.
-
-### `venv`
-
 ```bash
+git clone https://github.com/FinnTheHuman2412/in3050-in4050-F2026.git
+cd in3050-in4050-F2026
 python -m venv .venv
-source .venv/bin/activate          # Windows PowerShell: .venv\Scripts\Activate.ps1
+source .venv/bin/activate          # Windows: .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 jupyter lab
 ```
 
-### Conda
+Conda users can instead run:
 
 ```bash
 conda env create -f environment.yml
@@ -83,24 +78,20 @@ conda activate in3050-in4050-f2026
 jupyter lab
 ```
 
-## Teaching principle
+## Teaching rhythm
 
-Every notebook should follow the same rhythm:
+```text
+predict -> vote -> discuss -> experiment -> break the model -> explain -> transfer
+```
 
-1. Present one concrete question.
-2. Ask students to predict the outcome.
-3. Build the simplest useful model.
-4. Change one parameter.
-5. Deliberately expose a failure case.
-6. Name the concept that explains the result.
-7. Transfer it to an exam-style question.
+Each main notebook ends with:
 
-See [TEACHING.md](TEACHING.md) for the 105-minute session template and preparation checklist.
+- one deliberate failure case;
+- one optional IN4050 extension;
+- an exit ticket containing define, apply and diagnose questions.
 
-## Course and copyright note
+## Public-repository policy
 
-This is supplementary group-teaching material, not an official course repository. Official UiO announcements, curriculum and deadlines take precedence. Do not commit copyrighted lecture slides, solution manuals, student submissions, personal data, API keys or credentials.
-
-## License
+This is supplementary group-teaching material, not an official course repository. Official UiO pages take precedence. Do not publish mandatory-assignment solutions, exam solutions, student submissions, private TA notes, copyrighted lecture decks, personal data or credentials here.
 
 Original code and prose are released under the MIT License. Third-party material retains its original ownership.
