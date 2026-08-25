@@ -6,20 +6,24 @@ Group session is every Tuesday 14:15-16:00 on Modula.
 
 Here I will post resources from the group sessions.
 
-If you are wondering about something, or have objections or wishes for the group teaching, do not hesitate to get in touch by e-mail ([finnegj@uio.no](mailto:finnegj@uio.no)) or Mattermost.
+If you have questions, feedback, or requests for the group sessions, contact me by e-mail at [finnegj@uio.no](mailto:finnegj@uio.no) or on Mattermost.
 
-## Course material from the previous semester
+## Useful course repositories
 
-Course material from a previous semester of IN3050/IN4050 is available here:
+- **[Relevant supplementary IN3050 material](https://github.uio.no/arturr/IN3050)**  
+  A relevant repository with additional material that can be useful alongside the current group sessions.
 
-- [IN3050/IN4050 course material from the previous semester](https://github.uio.no/ziyuzh/IN3050_IN4050-public/tree/main)
+- **[Course material from a previous semester](https://github.uio.no/ziyuzh/IN3050_IN4050-public/tree/main)**  
+  Previous IN3050/IN4050 material for extra explanations and practice. Some content may differ from the current semester.
+
+> A UiO GitHub account may be required to access these repositories.
 
 ## Problems with Anaconda?
 
-1. Use an IFI machine where the Python setup should already be prepared. It is available here:  
+1. Use an IFI machine where the Python setup should already be prepared:  
    <https://www.uio.no/tjenester/it/maskin/programvare/programkiosk/hjelp/vmware.html>
 
 or
 
-2. Try to avoid Anaconda and use another tool to manage your Python installation, such as `venv`:  
+2. Use a Python virtual environment with `venv`:  
    <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/>
